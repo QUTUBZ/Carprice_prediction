@@ -23,7 +23,7 @@ def clean_data(value):
     return float(value)
 
 # Load the dataset
-@st.cache_data
+
 def load_data():
     cars_data = pd.read_csv('modified_car_dataset.csv')
     cars_data.dropna(inplace=True)
