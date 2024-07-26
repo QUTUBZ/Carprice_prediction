@@ -25,7 +25,7 @@ def clean_data(value):
 # Load the dataset
 
 def load_data():
-    cars_data = pd.read_csv('cleaned_car_dataset.csv')
+    cars_data = pd.read_csv('dataset.csv')
     cars_data.dropna(inplace=True)
     cars_data.drop_duplicates(inplace=True)
     cars_data['Brand'] = cars_data['Brand'].apply(get_brand_name)
